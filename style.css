@@ -1,0 +1,629 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(41, 41, 41);
+}
+
+/*-----Logo-----*/
+
+.site-logo {
+    flex: 2;
+    text-align: end;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.site-logo a{
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+
+.site-logo a::before {
+    content: attr(data-text);
+    font-size: 22px;
+    top: 3.8%;
+    left: 13.6%;
+    transition: 0.3s;
+    position: absolute;
+    opacity: 0;
+    color: black;
+    font-weight: 500;
+}
+
+.site-logo a:hover::before {
+    transform: translateX(60px);
+    opacity: 1;
+    color: rgb(209, 0, 164);
+}
+
+/*-----Logo End-----*/
+
+.navbar {
+    flex: 8;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-item {
+    position: relative;
+    color: rgb(231, 231, 231);
+    letter-spacing: 2px;
+    margin: 0 30px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/*-----Navbar Animation----*/
+
+.navbar-item:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.navbar-item:hover:before {
+    color: rgb(209, 0, 164);
+    z-index: 1;
+    transform: translate(6px , -6px);
+    font-weight: 600;
+}
+
+#home-btn:hover:before {
+    color: rgb(0, 200, 214);
+    z-index: 1;
+    transform: translate(6px ,-6px);
+    font-weight: 600;
+}
+
+/*-----Navbar Animation End----*/
+
+#home-btn {
+    font-size: 40px;
+}
+
+ /*-----User-Interface-----*/
+
+.user-interface {
+    flex: 2;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 100%;
+    margin-right: 50px;
+}
+
+.user-interface a{
+    color: rgb(155, 155, 155);
+    font-size: 18px;
+    background-color: rgb(41, 41, 41);
+    padding: 10px 15px;
+    margin: auto 10px;
+    width: max-content;
+    border-radius: 5px;
+    font-weight: 300;
+    transition: all 0.2s;
+}
+
+.user-interface a:hover .fa-solid{
+    color: rgb(209, 0, 164);
+}
+.user-interface a:hover {
+    color: rgb(209, 209, 209);
+} 
+.header-icons {
+    margin-left: 10px;
+    font-size: 14px;
+    background-color: rgb(41, 41, 41);
+    transition: 0.2s;
+}
+
+/*-----Header End-----*/
+
+.middle-area {
+    display: flex;
+    height: 600px;
+}
+
+.user-buttons {
+    flex: 0.4;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40%;
+    margin-top: 65px;
+    margin-left: 220px;
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+}
+
+.user-btn {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0.5px solid black;
+    border-bottom-right-radius: 35px;
+    transition: 0.3s;
+}
+
+.btn-text{
+    font-size: 18px;
+    color: black;
+    font-weight: 300;
+    transition: 0.7s;
+}
+
+
+.user-btn:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+.user-btn:hover .btn-text {
+    color: white;
+    transform: translateY(-25px);
+}
+
+.user-btn:hover .fa-gear, .user-btn:hover .fa-coins, 
+.user-btn:hover .fa-message, .user-btn:hover .fa-chart-line{
+    color: white;
+    transform: scale(50%);
+}
+
+.fa-gear, .fa-coins, .fa-message, .fa-chart-line {
+    color: rgb(36, 36, 36);
+    font-size: 65px;
+    transition: 0.7s;
+}
+
+.src-area {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.src-input {
+    width: 600px;
+    height: 35px;
+    padding-left: 12px;
+    border-radius: 3px;
+    border: 0.2px solid rgb(187, 187, 187);
+}
+
+.src-area h2{
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.src-submit {
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: rgb(41, 41, 41);
+    color: rgb(209, 209, 209);
+    letter-spacing: 3px;
+    font-weight: 500;
+    border-bottom-right-radius: 15px;
+    transition: 0.3s;
+}
+
+.src-submit:hover{
+    color: rgb(209, 0, 164);
+}
+
+.fa-circle-notch {
+    margin-left: 10px;
+    color: rgb(209, 0, 164);
+}
+
+.border-bottom{
+    display: flex;
+    justify-content: center;
+}
+.border-75{
+    background-color: rgb(56, 56, 56);
+    width: 80%;
+    height: 1px;
+}
+
+/*-----Middle Section End-----*/
+
+.wallet {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    position: relative;
+}
+
+.fa-wallet{
+    position: absolute;
+    font-size: 150px;
+    right: 16%;
+    top: 40%;
+}
+
+.wallet-bg {
+    width: 65%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-left: -225px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.wallet-item {
+    display: flex;
+    width: 70%;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.w-item-1 {
+    flex: 2;
+}
+.w-item-2 {
+    flex: 2;
+}
+.w-item-3 {
+    flex: 2;
+    text-align: center;
+}
+.w-item-4 {
+    flex: 1;
+    text-align: center;
+}
+
+.wallet-item:nth-child(2){
+    font-size: 18px;
+}
+
+.wallet-item:nth-child(4) .w-item-4,
+.wallet-item:nth-child(5) .w-item-4,
+.wallet-item:nth-child(7) .w-item-4{
+    color: rgb(0, 105, 23);
+}
+
+.wallet-item:nth-child(3) .w-item-4,
+.wallet-item:nth-child(6) .w-item-4{
+    color: red;
+}
+
+
+/*-----NFT Section Start-----*/
+
+.nfts {
+    display: flex;
+    height: 600px;
+}
+
+.nft-images{
+    flex: 1.8;
+    order: 2;
+    position: relative;
+}
+
+.nft-images h1{
+    margin-top: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.fa-gem{
+    color: rgb(209, 0, 164);
+}
+
+.nft-images a img{
+    width: 250px;
+    height: auto;
+    border-top-right-radius: 25px;
+}
+
+.nft-images a{
+    transition: all 1s;
+
+}
+
+.nft-images a:hover{
+    transform: translateY(-100px);
+    z-index: 5;
+}
+
+.nft-img-1{
+    right: 60%;
+    top: 25%;
+    position: absolute;
+}
+
+.nft-img-1::before{
+    content: "Mekaverse";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transition: .5s;
+    color: black;
+}
+
+.nft-img-2::before{
+    content: "Mekaverse";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transition: .5s;
+    color: black;
+}
+.nft-img-3::before{
+    content: "Solarmy";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transition: .5s;
+    color: black;
+}
+.nft-img-4::before{
+    content: "Solamander";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transition: .5s;
+    color: black;
+}
+.nft-img-5::before{
+    content: "Eternal Being";
+    position: absolute;
+    top: 0;
+    left: 49%;
+    opacity: 0;
+    transition: .5s;
+    color: black;
+}
+
+.nft-img-1:hover::before,
+.nft-img-2:hover::before,
+.nft-img-3:hover::before,
+.nft-img-4:hover::before,
+.nft-img-5:hover::before{
+    opacity: 1;
+    transform: translateX(-220px);
+}
+.nft-img-2{
+    right: 50%;
+    top: 30%;
+    position: absolute;
+}
+.nft-img-3{
+    right: 40%;
+    top: 35%;
+    position: absolute;
+}
+.nft-img-4{
+    right: 30%;
+    top: 40%;
+    position: absolute;
+}
+.nft-img-5{
+    right: 20%;
+    top: 45%;
+    position: absolute;
+}
+
+/*-----Sites-----*/
+
+.buy-nfts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.buy-nfts h1{
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+.buy-nfts h4{
+    color: rgb(148, 148, 148);
+}
+
+.nft-sites{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 550px;
+    flex: 1;
+    align-items: center;
+}
+
+.nft-sites a i{
+    text-decoration: none;
+    color: rgb(209, 0, 164);
+    margin-left: 15px;
+    font-size: 24px;
+    transition: 0.4s;
+}
+
+.nft-sites a{
+    color: rgb(209, 209, 209);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 37, 37);
+    border-bottom-right-radius: 25px;
+    transition: all 0.4s;
+    width:200px;
+    padding: 15px 15px;
+}
+
+.nft-sites a:hover{
+    color: rgb(209, 0, 164);
+    border-top-left-radius: 25px;
+}
+
+.nft-sites a:hover .fa-fish,
+.nft-sites a:hover .fa-s,
+.nft-sites a:hover .fa-bitcoin,
+.nft-sites a:hover .fa-infinity
+{
+    color: rgb(209, 209, 209);
+}
+
+/*-----NFT Section End-----*/
+
+/*-----Footer----*/
+
+.site-footer{
+    display: flex;
+    height: 200px;
+    background-color: rgb(36, 36, 36);
+}
+
+.about-brand{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand-info{
+    font-size: 12px;
+    color: rgb(209, 209, 209);
+    width: 60%;
+    display: flex;
+}
+
+.footer-logo{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.footer-logo::after{
+    top: 100%;
+    left: 0;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: darkgray;
+    transition: all 0.3s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.footer-logo:hover::after{
+    transform: scaleX(1);
+}
+
+.footer-logo:hover{
+    color: darkgray;
+}
+
+.social-media{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.social-media-icons a{
+    font-size: 24px;
+    color: rgb(209, 209, 209);
+}
+
+.social-media-icons a i{
+    transition: 0.3s;
+}
+
+.social-media-icons .fa-youtube:hover{
+    color: red;
+    transform:scale(150%);
+}
+
+.social-media-icons .fa-twitter:hover{
+    color: rgb(0, 180, 224);
+    transform:scale(150%);
+}
+
+.social-media-icons .fa-facebook:hover{
+    color: rgb(0, 80, 199);
+    transform:scale(150%);
+}
+
+.social-media-icons .fa-instagram:hover{
+    color: rgb(204, 0, 255);
+    transform:scale(150%);
+}
+
+
+.social-media-icons{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copyright{
+    color: rgb(202, 202, 202);
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.footer-info{
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.footer-info a i{
+    margin-right: 13px;
+    color: rgb(209, 0, 164);
+    margin-left: 120px;
+    font-size: 14px;
+}
+
+.footer-info a .fa-circle-question{
+    margin-right: 15px;
+}
+
+.footer-info a{
+    color: rgb(209, 209, 209);
+}
+
+.footer-info a:hover{
+    color: darkgray;
+}

@@ -1,0 +1,88 @@
+.account-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+.account-bg{
+    display: flex;
+    flex: 20;
+    margin-right: 40px;
+    width: 50%;
+    margin-top: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
+    background-image: linear-gradient(to right bottom, rgba(209, 0, 164, 0.8), rgb(68, 0, 65));
+    margin-bottom: 100px;
+}
+
+.account-footer{
+    flex:5;
+    flex-grow: 3;
+    width: 100%;
+    background-color: rgb(36,36,36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-footer a{
+    color: rgb(209,209,209);
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.account-part {
+    display: flex;
+    flex-flow: column;
+    margin: 40px;
+    height: 40%;
+    justify-content: space-around;
+}
+
+.account-part input{
+    width: 400px;
+    height: 30px;
+    padding-left: 10px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid transparent;
+    background-color: rgb(36,36,36);
+}
+
+::placeholder{
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.account-button {
+    color: rgb(209,0,164);
+    font-weight: 600;
+    transition: 0.4s;
+    clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
+    height: 100px;
+    width: 200px;
+    background-color: rgb(36, 36, 36);
+    padding-top: 10px;
+    position: absolute;
+    bottom: 25%;
+    left: 26%;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.2s;
+}
+
+.account-button:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(209,0,164);
+    transform: scale(90%);
+}
+
+.fa-user-plus{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 150px;
+    top: 30%;
+    right: 30%;
+}

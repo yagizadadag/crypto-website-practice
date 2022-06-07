@@ -1,0 +1,101 @@
+.page-header{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-image: linear-gradient(to left, rgba(0, 122, 37, 0.8), rgb(128, 1, 1));
+}
+
+.page-header p{
+    color: white;
+}
+
+
+.p-h-2{
+    font-size: 80px;
+    margin-top: 80px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 70%;
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
+.p-h-1{
+    font-size: 120px;
+    letter-spacing: 4px;
+    width: 70%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.portfolio-policies{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+}
+
+.portfolio-policy-type-2,.portfolio-policy-type-1{
+    display: flex;
+    height: 400px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.portfolio-policy-type-1:first-child{
+    margin-top: 100px;
+}
+
+.portfolio-policy-type-1 .policy-logo{
+    order: 2;
+    margin-left: 100px;
+}
+
+.portfolio-policy-type-2{
+    text-align: right;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid white;
+}
+
+.portfolio-policy-type-1{
+    border-bottom-right-radius: 50px;
+    background-color: rgb(36, 36, 36);
+    border-top-left-radius: 50px;
+    border: 1px solid white;
+}
+
+.policy-logo{
+    font-size:200px;
+    margin-right: 100px;
+    color: rgb(4, 109, 0);
+}
+
+.policy-info{
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+}
+
+.policy-info h1{
+    font-size: 40px;
+    margin-bottom: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.policy-info p{
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+/*-----Portfolio Part-----*/
+
