@@ -1,2 +1,4 @@
 # crypto-website-practice
- HTML ve CSS bilgilerimi kullanarak hayalimdeki kripto para sitesini tasarladim
+ Site suan icin responsive ozellige sahip degildir.
+ HTML ve CSS bilgilerimi kullanarak hayalimdeki kripto para sitesini tasarladim.
+ 
